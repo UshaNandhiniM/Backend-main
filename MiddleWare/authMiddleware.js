@@ -8,7 +8,7 @@ dotenv.config();
     const token = req.headers.authorization?.split(' ')[1];
     if (!token) {return res.status(401).send({ message: 'Access denied. Login Again.' });}
     try {
-        const decoded = jwt.verify(token, process.env.PASSKEY);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
         req.user = decoded
         const user=await User.findById(req.user.id);
         
