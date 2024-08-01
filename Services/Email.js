@@ -21,7 +21,7 @@ const sendPasswordResetEmail = async (userMail, userID) => {
 We have received a request to reset the password for your account associated with the ID ${userID}.
 If you did not request a password reset, please ignore this email. Your password will remain unchanged.
 To reset your password, please click the link below:
-https://auth-password.netlify.app/resetpassword/${userID}`, // html body
+https://carcareservice.netlify.app/forget-password/${userID}`, // html body
     });
     return { success: true, messageId: info.messageId };
   } catch (error) {

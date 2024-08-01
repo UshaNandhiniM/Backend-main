@@ -11,7 +11,7 @@ import {
 const router = express.Router();
 
 router.post("/register-user", registerUser);
-router.get("/get-user/:id",getUser)
+router.get("/get-user/:id",getUser);
 router.post("/login-user", loginUser);
 router.post("/forget-password", forgetPassword);
 router.post("/reset-password/:id", resetPassword);
