@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const bookingSchema = new mongoose.Schema(
   {
-    name: String,
+    username: String,
     email: String,
     address: String,
     pickupDate:String,

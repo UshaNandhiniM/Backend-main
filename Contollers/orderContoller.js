@@ -11,7 +11,7 @@ export const getBookings = async (req, res) => {
 
 export const createBooking = async (req, res) => {
   const {
-    name,
+    username,
     email,
     address,
     pickupDate,
@@ -29,7 +29,7 @@ export const createBooking = async (req, res) => {
     bookingDate,
   } = req.body;
   const newBooking = new Booking({
-    name,
+    username,
     email,
     address,
     pickupDate,
